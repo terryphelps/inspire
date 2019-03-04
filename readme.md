@@ -85,7 +85,7 @@ The todos portion of this project is the largest and will probably take the most
 
 ## Part 2 - Adding the functionality 
 
-The todolist is perhaps one of the most important features of this application. You will need to provide the user a way to add items to a list to be monitored for tracking. The user should be able to add or remove items easily and for a small bonus the user should be able to indicate an items status if they don't want to remove the item.
+The todolist is perhaps one of the most important features of this application. You will need to provide the user a way to add items to a list to be monitored for tracking. The user should be able to add or remove items easily and the user should be able to indicate an items status if they don't want to remove the item.
 
 ---------------------------------
 
