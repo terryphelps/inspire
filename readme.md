@@ -6,7 +6,7 @@ Inspiration can be difficult to achieve. Keep track of your many important tasks
 
 
 ##### Front-End
-This time around you are being thrown into a mix of several files and some basic structure. Take some time to look at the files. Remember services are used for getting and mainting the data integrity. Controllers are for manipulating the DOM.
+This time around you are being thrown into a mix of several files and some basic structure. Take some time to look at the files. Remember services are used for getting and maintaining the data integrity. Controllers are for manipulating the DOM.
 
 You will notice that the basic controllers and html structure has been setup for you. You will be responsible to connect each of the controllers to their appropiate service. Every Service is a class so be sure to instantiate the service inside the controller and save it to a variable in the controller to gain access to the needed methods. Take a look at the weather controller and service for a complete example of getting data from an api and seeing that data in the controller. Also don't forget to instantiate your controllers and add them to the app object in `main.js`.
 
@@ -38,7 +38,7 @@ In this project you will be expected to communicate with the following endpoints
 
 ### Todos `(/YOURNAME/todos)`
 
-The todos portion of this project is the largest and will probably take the most amount of time to complete. Your todo list will communicate with the server using the following methods. The server will only respond to valid request using the appropriate method.
+The todos portion of this project is the largest and will probably take the most amount of time to complete. Your todo list will communicate with the server using the following methods. The server will only respond to valid requests using the appropriate method.
 
 - `HTTP methods`
     - GET
