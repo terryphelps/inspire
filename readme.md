@@ -104,7 +104,7 @@ The positioning of elements on the page is not the absolute most crucial thing f
 - Allow the user to toggle the clock from, 12hr to military time. 
 - Include an Icon to show what the weather is sunny/cloudy/rainy
 - Add a button to cycle to next quote/picture
-- Could you encorporate a deadline for some of the tasks
+- Could you encorporate a deadline for some of the todos(all todos have a deadline property that accepts any value)
 - Add a settings so user can change to a new "theme" (font, background colors, etc.)
 - Clicking the weather should let the user toggle between Celsius, Fahrenheit, or even Kelvin display
 - `BONUS DIFFICULTY` The todo list shouldn't have to redraw every item just because one of them changed. 
