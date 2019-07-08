@@ -3,7 +3,6 @@ import TodoService from "./todo-service.js";
 const _todoService = new TodoService()
 
 function _drawTodos() {
-	//WHAT IS MY PURPOSE: To draw the to do's on the screen?
 	let todoElem = document.querySelector("#todos")
 	let template = ''
 	let todos = _todoService.Todos
@@ -12,11 +11,6 @@ function _drawTodos() {
 	})
 	todoElem.innerHTML = template
 }
-
-// function _drawError() {
-// 	console.error('[TODO ERROR]', _todoService.TodoError)
-// 	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
-// }
 
 export default class TodoController {
 	constructor() {
@@ -31,8 +25,6 @@ export default class TodoController {
 		let form = e.target
 
 		let todo = {
-			//			completed: form.completed.value,
-			//			user: form.user.value,
 			description: form.description.value,
 			// DONT FORGET TO BUILD YOUR todo OBJECT
 		}

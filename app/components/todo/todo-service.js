@@ -57,8 +57,6 @@ export default class TodoService {
 	}
 
 	toggleTodoStatus(todoId) {
-		// Be sure to change the completed property to its opposite
-		// todo.completed = !todo.completed <-- THIS FLIPS A BOOL
 		let todo = _state.todos.find(todo => todo._id == todoId)
 		todo.completed = !todo.completed
 
@@ -66,7 +64,6 @@ export default class TodoService {
 			.then(res => {
 				console.log(res.data.message)
 				this.getTodos()
-				//DO YOU WANT TO DO ANYTHING WITH THIS?
 			})
 			.catch(err => _setState('error', err.response.data))
 	}
@@ -74,14 +71,9 @@ export default class TodoService {
 	removeTodo(todoId) {
 		todoApi.delete(todoId)
 			.then(() => {
-				// let todo = this.Todos
-				// let index = todo.findIndex(t => t._id == todoId)
-				// todo.splice(index, 1)
 				this.getTodos()
 			})
 			.catch(err => _setState('error', err.response.data))
-		// This one is on you to write.... 
-		// The http method is delete at the todoId
 	}
 
 }

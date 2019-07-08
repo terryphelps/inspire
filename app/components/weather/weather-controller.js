@@ -22,6 +22,6 @@ export default class WeatherController {
 		_weatherService.getWeather()
 	}
 
-	//NOTE in here is where you would define the method that is triggered when the toggle temp button is clicked
+	// NOTE in here is where you would define the method that is triggered when the toggle temp button is clicked
 	// NOTE this logic will basically just call to the service to manipulate the values of the weather data
 }

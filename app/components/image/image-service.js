@@ -39,12 +39,4 @@ export default class ImageService {
 			})
 			.catch(e => console.error(e))
 	}
-	// getImage() {
-	// 	imgApi.get('')
-	// 		.then(res => {
-	// 			console.log("getImage", res.data.url)
-	// 			setState('url', res.data.url)
-	// 		})
-	// 		.catch((e) => console.error(e))
-	// }
 }

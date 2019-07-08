@@ -3,8 +3,4 @@ export default class Image {
     this.url = data.url
   };
 
-  // get Template() {
-  //   return `
-  //   `
-  // }
 }
