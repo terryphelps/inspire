@@ -3,30 +3,42 @@ import TodoService from "./todo-service.js";
 const _todoService = new TodoService()
 
 function _drawTodos() {
-	//WHAT IS MY PURPOSE?
+	//WHAT IS MY PURPOSE: To draw the to do's on the screen?
+	let todoElem = document.querySelector("#todos")
+	let template = ''
+	let todos = _todoService.Todos
+	todos.forEach(todo => {
+		template += todo.Template
+	})
+	todoElem.innerHTML = template
 }
 
-function _drawError() {
-	console.error('[TODO ERROR]', _todoService.TodoError)
-	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
-}
-
+// function _drawError() {
+// 	console.error('[TODO ERROR]', _todoService.TodoError)
+// 	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
+// }
 
 export default class TodoController {
 	constructor() {
-		_todoService.addSubscriber('error', _drawError)
+		//		_todoService.addSubscriber('error', _drawError)
+		_todoService.addSubscriber('todos', _drawTodos)
 		_todoService.getTodos()
 		// Don't forget to add your subscriber
 	}
 
 	addTodo(e) {
 		e.preventDefault()
-		var form = e.target
-		var todo = {
-			// DONT FORGET TO BUILD YOUR TODO OBJECT
+		let form = e.target
+
+		let todo = {
+			//			completed: form.completed.value,
+			//			user: form.user.value,
+			description: form.description.value,
+			// DONT FORGET TO BUILD YOUR todo OBJECT
 		}
 
 		_todoService.addTodo(todo)
+		form.reset()
 	}
 
 	toggleTodoStatus(todoId) {

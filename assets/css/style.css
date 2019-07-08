@@ -1,4 +1,132 @@
-#todo-error{
-  color: red;
+body {
+  display: flex;
+  height: 100vh;
+  width:  100vw;
+}
+form {
+  display: flex;
+  padding: 0;
+  font-size: 12px;
+}
+.container-fluid  {
+  display: flexbox;
+  height: 100vh;
+  width: 100vw;
+}
+#bg-image{
+  background-size: cover;
+  background-attachment: fixed;
+}
+.weather-items {
+  padding: 0;
+  margin: 0;
+  font-size: 2.rem;
+  color: rgb(255, 0, 0);
+}
+#weather-card:hover > .weather-items {
+  background: white;
+  font-size: 2.25rem;
+}
+#weather-card{
+  text-align: center;
+  background: none;
+  border: none;
+  opacity: .4;
+  /*color: rgb(255, 0, 0);*/
+}
+.row-top {
+  display: flex;
+  width: 100vw;
+}
+.row-bottom {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+}
+.todo-row1{
+  flex-direction: column;
+  align-content: space-between;
+}
+.todo-row2{
+  display: contents;
+  height: 300px;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  /* align-content: flex-start; */
+}
+#todo-ck {
+  display: flex;
+  /* flex-direction: row; */
+}
+#todo-desc {
+  flex-direction: row;
+  display: flex;
+  font-size: 12px;
+}
+#todo-btn {
+  flex-direction: row;
+  display: flex;
+  font-size: 12px;
+  padding: 0;
+}
+#todo-card{
+  scroll-behavior: auto;
+  height: auto;
+  flex-direction: column;
+  background: none;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
   font-size: 2em;
+}
+#todo{
+  font-size: 1em;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* #todos{
+  flex-direction: column;
+  justify-content: flex-end;
+} */
+#quote {
+  color: blue;
+  font-size: 25px;
+}
+/* .quote-items {
+  padding: 0;
+  margin: 0;
+  font-size: 2.rem;
+  color: rgb(0, 132, 255);
+} */
+p.quote-items{
+  width: fit-content;
+  max-width: 84%; 
+} 
+#quote:hover > .quote-items {
+  background: white;
+  width: fit-content;
+  max-width: 84%;
+  font-size: 28px;
+  color: rgb(0, 132, 255);
+}
+#quote-card {
+  background: none;
+  width: fit-content;
+  font-size: 25px;
+}
+#clock-item:hover {
+  font-size: 30px;
+  background: white;
+}
+#clock-card {
+  border: none;
+}
+#clock-item {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  font-size: 15px;
+  font-weight: 800;
+  mix-blend-mode: difference;
 }
