@@ -7,15 +7,27 @@ export default class Todo {
   }
   get Template() {
     if (this.completed) {
-      return `<div id="todo-ck" class="col-1"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox" checked></div>
-							<div id="todo-desc" class="col-8"><h3><s style="color: red">${this.description}</s></h3></div>
-							<div id="todo_btn" class="col-3"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
-							`
+      return `<div class="col-2 rows"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox" checked></div>
+    					<div class="col-7 rows"><h3><s style="color: red">${this.description}</s></h3></div>
+    					<div class="col-3 rows"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
+    					`
     } else {
-      return `<div id="todo-ck" class="col-1"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox"></div>
-							<div id="todo-desc" class="col-8"><h3>${this.description}</h3></div>
-              <div id="todo_btn" class="col-3"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
+      return `<div class="col-2 rows"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox"></div>
+    					<div class="col-7 rows"><h3>${this.description}</h3></div>
+              <div class="col-3 rows"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
               `
     }
   }
 }
+// if (this.completed) {
+//   return `<div id="todo-ck" class="col-1"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox" checked></div>
+//     					<div id="todo-desc" class="col-8"><h3><s style="color: red">${this.description}</s></h3></div>
+//     					<div id="todo_btn" class="col-3"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
+//     					`
+// } else {
+//   return `<div id="todo-ck" class="col-1"><input onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" type="checkbox"></div>
+//     					<div id="todo-desc" class="col-8"><h3>${this.description}</h3></div>
+//               <div id="todo_btn" class="col-3"><button onclick="app.controllers.todoController.removeTodo('${this._id}')" class="btn btn-primary">Delete</button></div>
+//               `
+// }
+//   }

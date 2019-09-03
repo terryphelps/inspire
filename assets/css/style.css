@@ -13,6 +13,9 @@ form {
   height: 100vh;
   width: 100vw;
 }
+.rows{
+  padding: 0%;
+}
 #bg-image{
   background-size: cover;
   background-attachment: fixed;
@@ -59,11 +62,12 @@ form {
   display: flex;
   font-size: 12px;
 }
-#todo-btn {
+#todos {
   flex-direction: row;
   display: flex;
   font-size: 12px;
-  padding: 0;
+  padding: 0,0,0,0;
+  margin: 0%;
 }
 #todo-card{
   scroll-behavior: auto;
